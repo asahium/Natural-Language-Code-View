@@ -1,0 +1,28 @@
+{
+    "declarations": [
+        {
+            "type": "function",
+            "name": "getFizzBuzzString",
+            "parameters": [
+                {
+                    "name": "number",
+                    "type": "Int"
+                }
+            ],
+            "returnType": "String",
+            "body": "return when {\n                number % 3 == 0 && number % 5 == 0 -> \"FizzBuzz\"\n                number % 3 == 0 -> \"Fizz\"\n                number % 5 == 0 -> \"Buzz\"\n                else -> number.toString()\n            }"
+        },
+        {
+            "type": "function",
+            "name": "fizzBuzz",
+            "parameters": [
+                {
+                    "name": "n",
+                    "type": "Int"
+                }
+            ],
+            "returnType": "Unit",
+            "body": "fun getFizzBuzzString(number: Int): String {\n            return when {\n                number % 3 == 0 && number % 5 == 0 -> \"FizzBuzz\"\n                number % 3 == 0 -> \"Fizz\"\n                number % 5 == 0 -> \"Buzz\"\n                else -> number.toString()\n            }\n        }"
+        }
+    ]
+}
